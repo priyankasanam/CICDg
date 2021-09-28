@@ -7,7 +7,7 @@ on:
     branches: master
 
 jobs:
-  docker-image:
+  path-context:
     runs-on: ubuntu-latest
     steps:
       -
@@ -32,4 +32,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: rstropek/htl-leo-csharp-4-slides:latest
+          tags: user/app:latest
